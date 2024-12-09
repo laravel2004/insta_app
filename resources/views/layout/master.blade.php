@@ -6,6 +6,9 @@
     <title>@yield('title', 'Instagram Clone')</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.0/dist/flowbite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -43,7 +46,7 @@
             <x-ionicon-search />
             <span class="text-xs">Search</span>
         </a>
-        <a href="#" class="text-gray-800 flex flex-col items-center">
+        <a href="/post" class="text-gray-800 flex flex-col items-center">
             <x-css-add class="w-8 h-8" />
             <span class="text-xs">Post</span>
         </a>

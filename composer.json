@@ -9,6 +9,7 @@
         "php": "^8.2",
         "blade-ui-kit/blade-heroicons": "^2.5",
         "blade-ui-kit/blade-zondicons": "^1.5",
+        "brunocfalcao/blade-feather-icons": "^4.0",
         "codeat3/blade-iconpark": "^1.6",
         "davidhsianturi/blade-bootstrap-icons": "^1.5",
         "faisal50x/blade-ionicons": "^1.0",
