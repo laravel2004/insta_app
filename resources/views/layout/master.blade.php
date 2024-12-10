@@ -42,10 +42,10 @@
             <x-heroicon-s-home />
             <span class="text-xs">Home</span>
         </a>
-        <a href="#" class="text-gray-800 flex flex-col items-center">
-            <x-ionicon-search />
-            <span class="text-xs">Search</span>
-        </a>
+{{--        <a href="#" class="text-gray-800 flex flex-col items-center">--}}
+{{--            <x-ionicon-search />--}}
+{{--            <span class="text-xs">Search</span>--}}
+{{--        </a>--}}
         <a href="/post" class="text-gray-800 flex flex-col items-center">
             <x-css-add class="w-8 h-8" />
             <span class="text-xs">Post</span>

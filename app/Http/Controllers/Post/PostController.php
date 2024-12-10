@@ -17,7 +17,7 @@ class PostController extends Controller
 
     public function index(Request $request)
     {
-        $posts = $this->post->with('user.setting')->latest()->paginate(2);
+        $posts = $this->post->with('user.setting')->latest()->paginate(15);
 
         if ($request->ajax()) {
             return view('welcome', compact('posts'))->render();

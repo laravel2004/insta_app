@@ -1,4 +1,4 @@
-<div class="bg-white border border-gray-300 rounded-lg overflow-hidden mb-4">
+<div id="post-card-{{ $post_id }}" class="bg-white border border-gray-300 rounded-lg overflow-hidden mb-4">
     <div class="flex items-center p-4">
         <img src="{{ $avatar }}" alt="User Avatar" class="w-10 h-10 rounded-full">
         <div class="ml-3">
@@ -6,7 +6,8 @@
             <p class="text-xs text-gray-500">{{ $location }}</p>
         </div>
     </div>
-    <img src="{{ $image }}" alt="Post Image" class="w-full">
+    <img src="{{ $image }}" data-modal-target="editModal"
+         data-modal-toggle="editModal" alt="Post Image" class="w-full">
     <div class="p-4">
         <div class="flex items-center justify-between">
             <div class="flex items-center">

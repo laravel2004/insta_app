@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Comment\CommentController;
 use App\Http\Controllers\Post\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\UserProfile;
@@ -10,6 +11,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
     Route::get('/post', [PostController::class, 'create'])->name('post.create');
     Route::post('/post', [PostController::class, 'store'])->name('post.store');
+
+    Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+    Route::post('/comments/store', [CommentController::class, 'store'])->name('comments.store');
     Route::get('/user-profile', [UserProfile::class, 'index'])->name('user-profile');
     Route::post('/user-profile/update', [UserProfile::class, 'update'])->name('user-profile.update');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
